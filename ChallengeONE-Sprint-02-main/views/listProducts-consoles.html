@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Consoles</title>
+
+    <link rel="stylesheet" href="../assets/css/reset-configure.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+<body>
+    <header class="header container ">
+        <div class="header-logo">
+            <a href="../index.html"><img src="../assets/img/Logo.png" alt="logo AluraGeek" class="logo"></a>
+        </div>
+        <span class="header-search">
+            <input type="search" class="header-input" placeholder="O que deseja encontrar?">
+            <img src="../assets/img/search.png" class="header-input-img" alt="icone procurar">
+        </span>    
+        <button class="btn btn-1" data-login >Login</button>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-write container">
+                <h1 class="hero-title">Dezembro Promocional</h1>
+                <h3 class="hero-subtitle">Produtos selecionados com 33% de desconto</h3>
+                <button class="btn btn-2"> Ver Consoles</button>
+            </div>
+        </section>
+        <section class="products">
+            <div class="products-titles container">
+                <h2>Consoles</h2>
+            </div>
+            <div class="product-row product-row-lp container" data-product-consoles>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <section class="footer-section container">
+                <div class="header-logo footer-left">
+                    <a href="#"><img src="../assets/img/Logo.png" alt="imagem da logo" class="logo"></a> 
+                    <div class="map-site">
+                        <p class="map-site-item">Quem Somos nós</p>
+                        <p class="map-site-item">Política de privacidade</p>
+                        <p class="map-site-item">Programa fidelidade</p>
+                        <p class="map-site-item">Nossas lojas</p>
+                        <p class="map-site-item">Quero ser franqueado</p>
+                        <p class="map-site-item">anuncie aqui</p>
+                    </div>
+                </div>                
+                <div>
+                    <form data-newMessage>
+                        <p><b>Fale conosco</b></p>
+                        <p class=" label-form label-form-name">Nome</p>
+                        <input class="form-input form-input-name"type="text" data-name-mess>
+                        <p class=" label-form label-form-mesg">Escreva sua mensagem</p>
+                        <input class="form-input form-input-mesg" type="text" data-mess>
+                        <button class="btn btn-2 btn-form">Enviar mensagem</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <section class="baseboard container">
+            <p>Desenvolvido por Samara Santos <a href="https://github.com/samarafs" target="_blank"> <img src="../assets/img/github.png" class="github-img"> GitHub</a></p> 
+            <p>©2023</p>    
+            
+        </section>
+    </footer>
+    <script type="module" src="../controller/consoles-listProducts-controller.js"></script>
+    <script type="module" src="../controller/newMessage-controller.js"></script>
+</body>
+</html>
